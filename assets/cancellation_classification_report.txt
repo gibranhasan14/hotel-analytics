@@ -1,0 +1,16 @@
+test data evaluation:
+Accuracy: 0.8892
+Precision: 0.8893
+Recall: 0.8006
+F1 Score: 0.8426
+ROC AUC: 0.9541
+
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.89      0.94      0.91     15033
+           1       0.89      0.80      0.84      8845
+
+    accuracy                           0.89     23878
+   macro avg       0.89      0.87      0.88     23878
+weighted avg       0.89      0.89      0.89     23878

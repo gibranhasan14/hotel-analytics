@@ -1,0 +1,16 @@
+Evaluating model on test data...
+Accuracy: 0.9806
+Precision: 0.9814
+Recall: 0.7140
+F1 Score: 0.8266
+ROC AUC: 0.9938
+
+Classification Report:
+              precision    recall  f1-score   support
+
+         0.0       0.98      1.00      0.99     22329
+         1.0       0.98      0.71      0.83      1549
+
+    accuracy                           0.98     23878
+   macro avg       0.98      0.86      0.91     23878
+weighted avg       0.98      0.98      0.98     23878

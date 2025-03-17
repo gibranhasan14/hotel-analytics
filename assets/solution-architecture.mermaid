@@ -1,0 +1,38 @@
+flowchart TD
+    subgraph "Data Ingestion"
+        A[CSV Data] --> B[ETL Process]
+    end
+    
+    subgraph "Data Warehouse"
+        B --> C1[Date Dimension]
+        B --> C2[Hotel Dimension]
+        B --> C3[Customer Dimension]
+        B --> C4[Room Dimension]
+        B --> C5[Agent Dimension]
+        B --> C6[Booking Fact Table]
+    end
+    
+    subgraph "Analytics & Machine Learning"
+        C1 & C2 & C3 & C4 & C5 & C6 --> D1[Booking Trends Analysis]
+        C1 & C2 & C3 & C4 & C5 & C6 --> D2[Cancellation Prediction Model]
+        C1 & C2 & C3 & C4 & C5 & C6 --> D3[Time Series Forecasting]
+        C1 & C2 & C3 & C4 & C5 & C6 --> D4[Customer Churn Prediction]
+    end
+    
+    subgraph "Visualization"
+        D1 & D2 & D3 & D4 --> E[Interactive Dashboards]
+    end
+    
+    style A fill:#f9f9f9,stroke:#333,stroke-width:1px
+    style B fill:#d0e0ff,stroke:#333,stroke-width:1px
+    style C1 fill:#c9e6c9,stroke:#333,stroke-width:1px
+    style C2 fill:#c9e6c9,stroke:#333,stroke-width:1px
+    style C3 fill:#c9e6c9,stroke:#333,stroke-width:1px
+    style C4 fill:#c9e6c9,stroke:#333,stroke-width:1px
+    style C5 fill:#c9e6c9,stroke:#333,stroke-width:1px
+    style C6 fill:#ffd2a0,stroke:#333,stroke-width:1px
+    style D1 fill:#ffe0c7,stroke:#333,stroke-width:1px
+    style D2 fill:#ffe0c7,stroke:#333,stroke-width:1px
+    style D3 fill:#ffe0c7,stroke:#333,stroke-width:1px
+    style D4 fill:#ffe0c7,stroke:#333,stroke-width:1px
+    style E fill:#d5c8e0,stroke:#333,stroke-width:1px
